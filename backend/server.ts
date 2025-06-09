@@ -21,10 +21,10 @@ fastify.register(fastifyMultipart, {
   },
 });
 
-fastify.register(fastifyStatic, {
-  root: path.join(process.cwd(), "public"),
-  prefix: "/",
-});
+// fastify.register(fastifyStatic, {
+//   root: path.join(process.cwd(), "public"),
+//   prefix: "/",
+// });
 
 fastify.register(cors, { 
   origin: "*",
