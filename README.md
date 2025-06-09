@@ -5,11 +5,9 @@
 ![Jeeva Blogs Logo](./Images%20examples/home.png)
 
 **A powerful, scalable blog management API built with modern technologies**
-
-[![Home](./Images%20examples/home.png)]
-[![Admin Dashboard](./Images%20examples/admin_dash.png)]
-[![Login](./Images%20examples/login.png)]
-[![About Us](./Images%20examples/about.png)]
+![Admin Dashboard](./Images%20examples/admin_dash.png)
+![Login](./Images%20examples/login.png)
+![About Us](./Images%20examples/about.png)
 
 
 </div>
@@ -36,7 +34,7 @@ Jeeva Blogs Backend is a robust, production-ready API for managing blog content 
 <tr>
 <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" height="40"/><br><b>TypeScript</b></td>
 <td align="center"><img src="https://www.fastify.io/img/logos/fastify-black.svg" width="40" height="40"/><br><b>Fastify</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40" height="40"/><br><b>PostgreSQL</b></td>
+<td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg" width="40" height="40"/><br><b>SQLite</b></td>
 <td align="center"><img src="https://www.prisma.io/images/favicon-32x32.png" width="40" height="40"/><br><b>Prisma</b></td>
 <td align="center"><img src="https://res.cloudinary.com/cloudinary/image/upload/c_scale,w_40/v1/logo/for_white_bg/cloudinary_icon_for_white_bg.svg" width="40" height="40"/><br><b>Cloudinary</b></td>
 </tr>
