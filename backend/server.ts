@@ -9,6 +9,11 @@ import fastifyStatic from "@fastify/static";
 import path from "path";
 import fastifyMultipart from "@fastify/multipart";
 
+const PORT = Number(process.env.PORT)!;
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(",")
+  : ["*"];
+
 dotenv.config();
 
 const fastify = Fastify({
@@ -26,10 +31,12 @@ fastify.register(fastifyMultipart, {
 //   prefix: "/",
 // });
 
-fastify.register(cors, { 
-  origin: "*",
+
+fastify.register(cors, {
+  origin: allowedOrigins,
   methods: ["GET", "POST", "PUT", "DELETE"],
- });
+});
+
 fastify.register(fastifyJwt, {
   secret: process.env.JWT_SECRET || "your-secret-key",
 });
@@ -53,6 +60,10 @@ fastify.register(blogRoutes, { prefix: "/api" });
 
 console.log("Server is starting...");
 
-fastify.listen({ port: 3000 }, () =>
-  console.log("Server running on port 3000")
-);
+fastify.listen({ port: PORT, host: "0.0.0.0" }, (err) => {
+  if (err) {
+    fastify.log.error(err);
+    process.exit(1);
+  }
+  console.log(`Server running on port ${PORT}`);
+});
