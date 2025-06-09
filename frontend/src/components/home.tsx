@@ -30,7 +30,20 @@ const Home = () => {
   }, []);
 
 
-  if (isLoading) return <p className="text-white">Loading...</p>;
+  if (isLoading) return (
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800">
+      <div className="flex flex-col items-center space-y-6">
+        <div className="relative">
+          <div className="animate-spin rounded-full h-16 w-16 border-4 border-gray-600"></div>
+          <div className="animate-spin rounded-full h-16 w-16 border-4 border-t-white absolute top-0"></div>
+        </div>
+        <div className="text-center">
+          <p className="text-white text-2xl font-bold mb-2">Loading</p>
+          <p className="text-gray-300 text-sm">Please wait a moment...</p>
+        </div>
+      </div>
+    </div>
+  );
   if (error) return <p className="text-red-500">{error}</p>;
   if (!blogs.length) return (
     <div className="flex flex-col items-center justify-center py-16 px-4">
