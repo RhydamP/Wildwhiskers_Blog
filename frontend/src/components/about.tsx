@@ -93,19 +93,19 @@ const About: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Sarah Johnson",
+                name: "Rhydam PAnda",
                 role: "Founder & Chief Pet Enthusiast",
-                bio: "Veterinarian with 15+ years of experience and proud parent of 3 rescue dogs.",
+                bio: "Explorer with 2+ years of experience and proud parent of 3 pet dogs.",
                 avatar: "👩‍⚕️"
               },
               {
-                name: "Mike Chen",
+                name: "Ronny",
                 role: "Community Manager",
                 bio: "Cat whisperer and social media guru who loves connecting pet parents worldwide.",
                 avatar: "👨‍💻"
               },
               {
-                name: "Emma Rodriguez",
+                name: "Risen",
                 role: "Content Creator",
                 bio: "Professional pet photographer and storyteller capturing the magic of human-animal bonds.",
                 avatar: "📸"

@@ -1,6 +1,6 @@
 import Fastify from "fastify";
-import blogRoutes from "./server/routes/blog";
-import authRoutes from "./server/routes/auth";
+import blogRoutes from "./routes/blog.js";
+import authRoutes from "./routes/auth.js";
 import cors from "@fastify/cors";
 import fastifyJwt from "@fastify/jwt";
 import { PrismaClient } from "@prisma/client";

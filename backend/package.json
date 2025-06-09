@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "fastify": "^5.3.3",
+    "@fastify/cors": "^11.0.1",
+    "@fastify/jwt": "^9.1.0",
+    "@fastify/multipart": "^9.0.3",
+    "@fastify/static": "^8.2.0",
+    "@prisma/client": "^6.9.0",
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.6.1",
+    "dotenv": "^16.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "streamifier": "^0.1.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.30",
+    "@types/streamifier": "^0.1.2",
+    "eslint": "^9.25.0",
+    "prisma": "^6.9.0",
+    "tsx": "^4.7.0",
+    "typescript": "~5.8.3"
+  }
+}

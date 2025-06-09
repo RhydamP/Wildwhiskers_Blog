@@ -1,7 +1,7 @@
 import type { FastifyInstance } from "fastify";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import prisma from "./db";
+import prisma from "./db.js";
 
 interface AuthRequest {
   username: string;

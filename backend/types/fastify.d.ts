@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from "fastify";
-import { JwtPayload } from "@fastify/jwt";
+import type { JwtPayload } from "jsonwebtoken";
 import { PrismaClient } from "@prisma/client";
 
 declare module "fastify" {

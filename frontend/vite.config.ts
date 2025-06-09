@@ -7,7 +7,13 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),tailwindcss()],
   build: {
-    outDir: 'dist/client', // separate frontend output
+    outDir: 'dist', // separate frontend output
     emptyOutDir: true
+  },
+  server: {
+    proxy: {
+      '/api': 'http://localhost:3000',
+      '/auth': 'http://localhost:3000'
+    }
   }
 })
